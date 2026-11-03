@@ -1,0 +1,189 @@
+instagram:hover { border-color: rgba(225, 48, 108, 0.5); background: rgba(225, 48, 108, 0.1); }
+    .instagram i.left-icon { color: #e1306c; }
+
+    .youtube:hover { border-color: rgba(255, 0, 0, 0.5); background: rgba(255, 0, 0, 0.1); }
+    .youtube i.left-icon { color: #ff0000; }
+
+    .pc-setup:hover { border-color: rgba(168, 85, 247, 0.5); background: rgba(168, 85, 247, 0.1); }
+    .pc-setup i.left-icon { color: #a855f7; }
+
+    /* Футер */
+    .footer {
+        margin-top: 30px;
+        font-size: 12px;
+        color: #6b7280;
+        letter-spacing: 0.5px;
+    }
+</style>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: #0b0f19;
+        color: #f3f4f6;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow-x: hidden;
+        padding: 20px;
+    }
+
+    /* Фоновий геймерський градієнт та сітка */
+    body::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background-image: 
+            radial-gradient(circle at 20% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
+            radial-gradient(circle at 80% 80%, rgba(168, 85, 247, 0.15) 0%, transparent 40%);
+        z-index: -1;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 480px;
+        background: rgba(17, 24, 39, 0.7);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 24px;
+        padding: 35px 25px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+        text-align: center;
+        animation: fadeIn 0.8s ease-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Аватарка */
+    .avatar-container {
+        position: relative;
+        width: 110px;
+        height: 110px;
+        margin: 0 auto 20px;
+    }
+
+    .avatar {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #6366f1;
+        box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+    }
+
+    .status-dot {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        width: 18px;
+        height: 18px;
+        background-color: #10b981;
+        border: 3px solid #0b0f19;
+        border-radius: 50%;
+    }
+
+    /* ІМ'Я ТА БІО */
+    h1 {
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+        color: #ffffff;
+    }
+
+    .tagline {
+        font-size: 14px;
+        color: #9ca3af;
+        margin-bottom: 24px;
+        line-height: 1.5;
+    }
+
+    .tagline span {
+        color: #a855f7;
+        font-weight: 600;
+    }
+
+    /* КНОПКИ ПОСИЛАНЬ */
+    .links-list {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .link-btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: rgba(31, 41, 55, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 14px 20px;
+        border-radius: 14px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .link-btn i.left-icon {
+        font-size: 20px;
+        margin-right: 14px;
+        width: 24px;
+        text-align: center;
+    }
+
+    .link-btn .content {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        text-align: left;
+    }
+
+    .link-btn .title {
+        font-size: 15px;
+        display: block;
+    }
+
+    .link-btn .desc {
+        font-size: 12px;
+        color: #9ca3af;
+        display: block;
+    }
+
+    .link-btn i.right-arrow {
+        color: #6b7280;
+        font-size: 14px;
+        transition: transform 0.2s;
+    }
+
+    /* Ефекти наведення */
+    .link-btn:hover {
+        background: rgba(99, 102, 241, 0.15);
+        border-color: rgba(99, 102, 241, 0.4);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(99, 102, 241, 0.2);
+    }
+
+    .link-btn:hover i.right-arrow {
+        transform: translateX(4px);
+        color: #fff;
+    }
+
+    /* Фірмові кольори для іконок */
+    .telegram:hover { border-color: rgba(0, 136, 204, 0.5); background: rgba(0, 136, 204, 0.1); }
+    .telegram i.left-icon { color: #0088cc; }
+
+    .
